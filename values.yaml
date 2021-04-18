@@ -1,0 +1,17 @@
+# Chart variables
+jump-app-cicd:
+  enabled: false
+jump-app-argocd:
+  enabled: false
+jump-app-micros:
+  enabled: true
+  istio:
+    enabled: false
+    namespace: istio-system
+    mtls: true
+  cicd:
+    namespace: lab-cicd-2-jump-app-cicd
+  knative:
+    enabled: false
+# Global variables
+
